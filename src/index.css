@@ -1,2 +1,18 @@
 
 @import "tailwindcss";
+
+@layer utilities {
+  .animate-slide {
+    display: inline-block;
+    animation: slide-left 25s linear infinite;
+  }
+
+  @keyframes slide-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
