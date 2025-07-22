@@ -13,9 +13,9 @@ const About = () => {
       </section>
 
       
-      <section className="py-16 px-6 md:px-20 ">
+      <section className="py-16 px-6 md:px-20 text-center">
         <h2 className="text-2xl font-bold mb-4">Who We Are</h2>
-        <p className="text-gray-600 leading-relaxed max-w-4xl">
+        <p className="text-gray-600 leading-relaxed max-w-7xl">
           Berozgaar.com is a hyperlocal micro-job platform built for the next billion. Our mission is to reduce unemployment by enabling quick, trusted, and fair work opportunities in your neighborhood. Whether you're a student, freelancer, daily wage earner, or skilled worker, our platform helps you find work instantly.
         </p>
         
