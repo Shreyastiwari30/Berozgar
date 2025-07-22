@@ -1,6 +1,6 @@
 import React from "react";
 import { FiSearch } from 'react-icons/fi';
-import Banner from "./banner";
+import Banner from "./Banner";
 
 const Home = () => {
   return (
