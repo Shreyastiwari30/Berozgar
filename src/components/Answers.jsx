@@ -18,7 +18,7 @@ const Answers = ({ ans, index }) => {
   
   if (ans.startsWith("•")) {
     return (
-      <li className="ml-6 list-disc text-base leading-relaxed text-white">
+      <li className="ml-6 list-disc text-base leading-relaxed text-black">
         {ans.slice(1).trim()}
       </li>
     );
@@ -26,14 +26,14 @@ const Answers = ({ ans, index }) => {
 
   if (heading || ans.endsWith(":")) {
     return (
-      <h3 className="pt-4 font-bold text-lg text-white">
+      <h3 className="pt-4 font-bold text-lg text-black">
         {answer}
       </h3>
     );
   }
 
   return (
-    <p className="pl-5 text-base text-white leading-relaxed">
+    <p className="pl-5 text-base text-black leading-relaxed">
       {answer}
     </p>
   );
