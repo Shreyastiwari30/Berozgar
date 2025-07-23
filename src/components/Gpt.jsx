@@ -76,7 +76,7 @@ function Gpt() {
   const activeChat = chats.find((chat) => chat.id === activeChatId);
 
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen bg-gradient-to-br from-purple-200 via-blue-100 to-white text-white">
+    <div className="flex flex-col lg:flex-row min-h-screen bg-gradient-to-br from-purple-200 via-blue-100 to-white text-black">
       
       <div className="lg:hidden flex justify-between items-center p-4 bg-zinc-950 border-b border-zinc-800">
         <h2 className="text-xl font-bold">GPT Chat</h2>
@@ -97,7 +97,7 @@ function Gpt() {
 
         <button
           onClick={createNewChat}
-          className="text-white hover:underline mb-4 block"
+          className="text-gray-800+ hover:underline mb-4 block"
         >
           + New Chat
         </button>
