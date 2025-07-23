@@ -76,19 +76,18 @@ function Gpt() {
   const activeChat = chats.find((chat) => chat.id === activeChatId);
 
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen bg-gradient-to-br from-black via-zinc-900 to-zinc-800 text-white">
-      {/* Mobile Top Bar */}
+    <div className="flex flex-col lg:flex-row min-h-screen bg-gradient-to-br from-purple-200 via-blue-100 to-white text-white">
+      
       <div className="lg:hidden flex justify-between items-center p-4 bg-zinc-950 border-b border-zinc-800">
         <h2 className="text-xl font-bold">GPT Chat</h2>
         
           
       </div>
 
-      {/* Sidebar */}
       <div
         className={`${
           sidebarOpen ? "block" : "hidden"
-        } lg:block fixed lg:static z-40 top-0 left-0 w-72 h-full bg-zinc-950 px-5 py-6 border-r border-zinc-800`}
+        } lg:block fixed lg:static z-40 top-0 left-0 w-72 h-screen bg-purple-200 px-5 py-6 border-r border-zinc-800`}
       >
         <div className="flex justify-between items-center mb-6">
           <span className="text-xl font-bold">Recent Chats</span>
@@ -131,7 +130,7 @@ function Gpt() {
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 p-6 pt-4 lg:ml-72 relative">
+      <div className="flex-1 p-6 pt-4 lg:ml-24 relative">
         <h1 className="text-3xl sm:text-4xl font-extrabold text-center mb-6 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
           Ask Me Anything
         </h1>
@@ -140,12 +139,12 @@ function Gpt() {
           {activeChat?.history.map((entry, idx) => (
             <div
               key={idx}
-              className="bg-zinc-900 p-4 rounded-lg shadow-md border border-zinc-700"
+              className="bg-gray-200   p-4 rounded-lg shadow-md border border-zinc-700"
             >
-              <p className="text-purple-400 font-semibold mb-2">
+              <p className="text-black font-semibold mb-2">
                 Q: {entry.question}
               </p>
-              <ul className="space-y-1 text-white list-disc list-inside">
+              <ul className="space-y-1 text-black list-disc list-inside">
                 {entry.answers.map((ans, i) => (
                   <li key={i}>
                     <Answers ans={ans} index={i} />
